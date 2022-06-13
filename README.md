@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Traveler
 
-> Description the project.
+> Space Traveler is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. 
 
 
 ## Built With
