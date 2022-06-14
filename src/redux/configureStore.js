@@ -1,5 +1,5 @@
 import missions from './missions/missions';
-import rockets from './rockets/Rockets';
+import rockets from './rockets/Rockets.js';
 import profile from './profile/profile';
 
 const { configureStore } = require('@reduxjs/toolkit');
