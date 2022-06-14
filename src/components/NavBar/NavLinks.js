@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function NavLinks() {
   return (
     <ul>
-      <li>Rockets</li>
-      <li>Missions</li>
+      <Link to="/">Rockets</Link>
+      <Link to="/mission">Missions</Link>
     </ul>
   );
 }
