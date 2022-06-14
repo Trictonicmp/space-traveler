@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from '../css/components/Rocket.module.css';
+import buttonStyle from '../css/components/RocketsButton.module.css';
 
 const Rocket = (props) => {
   const {
@@ -21,6 +22,16 @@ const Rocket = (props) => {
         <p>
           {description}
         </p>
+        <button
+          type="button"
+          className={`
+            ${buttonStyle.button}
+            ${buttonStyle.blue}
+            ${styles.reserveButton}
+          `}
+        >
+          Reserve Rocket
+        </button>
       </div>
     </li>
   );

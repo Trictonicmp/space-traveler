@@ -11,7 +11,7 @@ const Rockets = () => {
 
   useEffect(() => {
     dispatch(getRockets());
-  }, [dispatch]);
+  }, []);
 
   const rocketComponents = state.map((rocket) => (
     <Rocket
