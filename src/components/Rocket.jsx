@@ -12,11 +12,12 @@ const Rocket = (props) => {
   return (
     <li className={styles.rocket} key={id}>
       <img
+        className={styles.rocketImg}
         src={imageURL}
         alt={rocketName}
       />
-      <div>
-        <h2>{rocketName}</h2>
+      <div className={styles.rocketDetails}>
+        <h2 className={styles.rocketTitle}>{rocketName}</h2>
         <p>
           {description}
         </p>
