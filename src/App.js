@@ -1,6 +1,8 @@
+import Rockets from './components/pages/Rockets';
+
 function App() {
   return (
-    <div className="App" />
+    <Rockets />
   );
 }
 
