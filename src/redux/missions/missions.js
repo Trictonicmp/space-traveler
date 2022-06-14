@@ -2,8 +2,13 @@
 
 // ACTION CREATORS
 
-const reducer = (state = [], action) => {
-  switch (action.type) {
+const initialState = [];
+
+const reducer = (state = initialState, action) => {
+  switch (action) {
+    case 'FETCH_MISSON':
+      return [...state, action.payload];
+
     default:
       return state;
   }
