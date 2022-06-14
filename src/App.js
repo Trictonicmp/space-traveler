@@ -8,8 +8,8 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path='/' element={<Rocket />} />
-        <Route path='/mission' element={<Mission />} />
+        <Route path="/" element={<Rocket />} />
+        <Route path="/mission" element={<Mission />} />
       </Routes>
     </>
   );
