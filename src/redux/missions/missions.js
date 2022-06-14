@@ -1,6 +1,6 @@
 // ACTIONS
 
-//ACTION CREATORS
+// ACTION CREATORS
 
 const reducer = () => {
 
