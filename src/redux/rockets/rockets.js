@@ -6,6 +6,7 @@ export const GET_ROCKETS = 'space-traveler/rockets/GET_ROCKETS';
 // ACTION CREATORS
 export const getRockets = () => async (dispatch) => {
   const rockets = await getRocketsFromAPI();
+
   dispatch({
     type: GET_ROCKETS,
     payload: rockets,
@@ -15,7 +16,7 @@ export const getRockets = () => async (dispatch) => {
 const reducer = (state = [], action) => {
   switch (action.type) {
     case GET_ROCKETS:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }

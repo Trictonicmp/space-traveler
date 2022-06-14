@@ -1,16 +1,15 @@
 import { ROCKETS_ENDPOINT } from '../APIconfig';
 
 const getRocketsFromAPI = async (errorCallback = null) => {
+  let data = [];
   try {
     const response = await fetch(ROCKETS_ENDPOINT, { method: 'GET' });
-    const data = await response.json();
-    // console.log(data);
-    return data;
+    data = await response.json();
   } catch (error) {
     if (errorCallback) errorCallback();
   }
 
-  return [];
+  return data;
 };
 
 export default getRocketsFromAPI;
