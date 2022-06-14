@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from './Logo';
+import BrandLogo from './BrandLogo';
 import NavLinks from './NavLinks';
 
 function Nav() {
   return (
     <nav>
-      <Logo />
+      <BrandLogo />
       <NavLinks />
     </nav>
   );
