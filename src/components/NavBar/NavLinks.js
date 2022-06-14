@@ -6,6 +6,7 @@ function NavLinks() {
     <ul>
       <Link to="/">Rockets</Link>
       <Link to="/mission">Missions</Link>
+      <Link to="/profile">Profile</Link>
     </ul>
   );
 }
