@@ -14,14 +14,9 @@ const Rockets = () => {
   }, []);
 
   const rocketComponents = state.map((rocket) => (
-    <Rocket
-      id={rocket.id}
-      key={rocket.id}
-      rocketName={rocket.rocketName}
-      description={rocket.description}
-      imageURL={rocket.imageURL}
-    />
+    <Rocket rocket={rocket} key={rocket.id} />
   ));
+
   return (
     <ul className={styles.rocketsContainer}>
       { rocketComponents }
