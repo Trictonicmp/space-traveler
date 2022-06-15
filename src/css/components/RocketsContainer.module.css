@@ -1,0 +1,11 @@
+.rocketsContainer {
+  margin-inline: auto;
+  width: calc(100% - 100px);
+  max-width: 1300px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style: none;
+}

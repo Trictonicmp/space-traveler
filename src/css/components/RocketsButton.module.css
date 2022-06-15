@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.blue {
+  color: white;
+  background-color: hsl(211, 100%, 50%);
+}
+
+.blue:hover { background-color: hsl(200, 100%, 60%); }
+.blue:active { background-color: hsl(211, 100%, 40%); }
