@@ -8,7 +8,7 @@ function Profile() {
   const reservedMissions = missionsState.map((mission) => {
     if (mission.reserved) {
       return (
-        <li key={mission.id}>
+        <li key={mission.id} className={styles.profileListItem}>
           { mission.mission }
         </li>
       );
@@ -19,7 +19,7 @@ function Profile() {
   const reservedRockets = rocketsState.map((rocket) => {
     if (rocket.reserved) {
       return (
-        <li key={rocket.id}>
+        <li key={rocket.id} className={styles.profileListItem}>
           { rocket.rocketName }
         </li>
       );
@@ -30,16 +30,16 @@ function Profile() {
 
   return (
     <section className={styles.profileContainer}>
-      <div>
+      <div className={styles.profileListSection}>
         <h2>My Missions</h2>
-        <ul>
+        <ul className={styles.profileListItemsContainer}>
           { reservedMissions }
         </ul>
       </div>
 
-      <div>
+      <div className={styles.profileListSection}>
         <h2>My Rockets</h2>
-        <ul>
+        <ul className={styles.profileListItemsContainer}>
           { reservedRockets }
         </ul>
       </div>
