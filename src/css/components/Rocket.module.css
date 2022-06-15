@@ -30,3 +30,15 @@
   bottom: 0;
   margin-top: 1em;
 }
+
+.reservedBadge {
+  font-size: 0.7em;
+  padding: 0.3em;
+  background-color: #18a2b8;
+  vertical-align: middle;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+  margin-right: 0.5em;
+}
