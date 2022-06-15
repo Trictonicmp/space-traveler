@@ -2,22 +2,27 @@
   background-color: aliceblue;
 }
 
+body {
+  padding-bottom: 20px;
+}
+
 .header {
   display: inline-flex;
   padding: 10px 10px 0px 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-weight: bold;
 }
 
 .header div {
   border: 1px solid rgb(187, 186, 186);
-  width: 10vw;
+  width: 12vw;
   padding: 5px;
 }
 
 .description {
-  width: 40vw !important;
+  width: 50vw !important;
 }
 
 .table {
@@ -27,11 +32,11 @@
 }
 
 .table div {
-  width: 10vw;
+  width: 12vw;
   border: 1px solid rgb(187, 186, 186);
   padding: 5px;
 }
 
 .description-info {
-  width: 40vw !important;
+  width: 50vw !important;
 }
