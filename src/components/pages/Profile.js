@@ -5,38 +5,42 @@ function Profile() {
   const missionsState = useSelector((state) => state.missions);
   const rocketsState = useSelector((state) => state.rockets);
 
-  const reservedMissions = missionsState.map((mission) => {
+  const reservedMissions = [];
+  const reservedRockets = [];
+
+  missionsState.forEach((mission) => {
     if (mission.reserved) {
-      return (
+      reservedMissions.push(
         <li key={mission.id} className={styles.profileListItem}>
           { mission.mission }
-        </li>
+        </li>,
       );
     }
-    return '';
   });
 
-  if (missionsState.length === 0) {
+  if (reservedMissions.length === 0) {
     reservedMissions.push(
-      <li key={0} className={styles.profileListNoItems}>There&apos;s no Rockets reserved</li>,
+      <li className={styles.profileListNoItems}>
+        No Missions Reserved
+      </li>,
     );
   }
 
-  const reservedRockets = rocketsState.map((rocket) => {
+  rocketsState.forEach((rocket) => {
     if (rocket.reserved) {
-      return (
+      reservedRockets.push(
         <li key={rocket.id} className={styles.profileListItem}>
           { rocket.rocketName }
-        </li>
+        </li>,
       );
     }
-
-    return '';
   });
 
-  if (rocketsState.length === 0) {
+  if (reservedRockets.length === 0) {
     reservedRockets.push(
-      <li key={1} className={styles.profileListNoItems}>There&apos;s no Rockets reserved</li>,
+      <li className={styles.profileListNoItems}>
+        No Rockets Reserved
+      </li>,
     );
   }
 
