@@ -15,6 +15,11 @@ const Rocket = (props) => {
       <div className={styles.rocketDetails}>
         <h2 className={styles.rocketTitle}>{rocket.rocketName}</h2>
         <p>
+          {rocket.reserved && (
+            <span className={styles.reservedBadge}>
+              Reserved
+            </span>
+          )}
           {rocket.description}
         </p>
         <button
@@ -37,6 +42,7 @@ Rocket.propTypes = {
     id: PropTypes.number,
     rocketName: PropTypes.string,
     description: PropTypes.string,
+    reserved: PropTypes.bool,
     imageURL: PropTypes.string,
   }),
 };
