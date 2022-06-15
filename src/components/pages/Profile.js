@@ -23,7 +23,7 @@ function Profile() {
 
   if (reservedMissions.length === 0) {
     reservedMissions.push(
-      <li className={styles.profileListNoItems}>
+      <li key={0} className={styles.profileListNoItems}>
         No Missions Joined
       </li>,
     );
@@ -51,7 +51,7 @@ function Profile() {
 
   if (reservedRockets.length === 0) {
     reservedRockets.push(
-      <li className={styles.profileListNoItems}>
+      <li key={0} className={styles.profileListNoItems}>
         No Rockets Reserved
       </li>,
     );
