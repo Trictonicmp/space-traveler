@@ -1,9 +1,16 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../redux/rockets/rockets';
 import styles from '../css/components/Rocket.module.css';
 import buttonStyle from '../css/components/RocketsButton.module.css';
 
 const Rocket = (props) => {
   const { rocket } = props;
+  const dispatch = useDispatch();
+
+  const toggleReserveRocket = () => {
+    dispatch(reserveRocket(rocket.id));
+  };
 
   return (
     <li className={styles.rocket} key={rocket.id}>
@@ -29,6 +36,7 @@ const Rocket = (props) => {
             ${buttonStyle.blue}
             ${styles.reserveButton}
           `}
+          onClick={toggleReserveRocket}
         >
           Reserve Rocket
         </button>
