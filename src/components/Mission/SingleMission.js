@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../../css/components/mission.css';
 
 export function TableHeader() {
@@ -12,15 +13,20 @@ export function TableHeader() {
   );
 }
 
-function SingleMission() {
+function SingleMission({ name, description }) {
   return (
     <div className="table">
-      <div>some</div>
-      <div className="description-info">some</div>
-      <div>sopme</div>
+      <div>{name}</div>
+      <div className="description-info">{description}</div>
+      <div>button</div>
       <div>some</div>
     </div>
   );
 }
+
+SingleMission.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default SingleMission;
