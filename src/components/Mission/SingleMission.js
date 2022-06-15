@@ -13,13 +13,23 @@ export function TableHeader() {
   );
 }
 
+function JoinOrLeaveButton() {
+  return <button type="button" className="button">Join Mission</button>;
+}
+
+function Badge() {
+  return (
+    <button type="button" className="badge">Not a member</button>
+  );
+}
+
 function SingleMission({ name, description }) {
   return (
     <div className="table">
       <div>{name}</div>
       <div className="description-info">{description}</div>
-      <div>button</div>
-      <div>some</div>
+      <div><Badge /></div>
+      <div><JoinOrLeaveButton /></div>
     </div>
   );
 }
