@@ -5,7 +5,7 @@ export const GET_ROCKETS = 'space-traveler/rockets/GET_ROCKETS';
 export const RESERVE_ROCKET = 'space-traveler/rockets/RESERVE_ROCKET';
 
 // ACTION CREATORS
-export const reserveRocket = (id) => ({
+export const toggleReserveRocket = (id) => ({
   type: RESERVE_ROCKET,
   payload: id,
 });
