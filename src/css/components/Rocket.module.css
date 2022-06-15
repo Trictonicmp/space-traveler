@@ -1,0 +1,32 @@
+.rocket {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.rocketImg {
+  flex-shrink: 1;
+  width: 100%;
+  max-width: 18em;
+}
+
+.rocketDetails {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.rocketTitle {
+  margin-bottom: 0.5em;
+}
+
+.reserveButton {
+  bottom: 0;
+  margin-top: 1em;
+}
