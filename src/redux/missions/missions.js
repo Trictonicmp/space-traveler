@@ -2,7 +2,7 @@ import fetchMissions from '../../API/Missions/MissionsAPI';
 // ACTIONS
 const FETCH_MISSION = 'FETCH_MISSION';
 
-const FETCH = (missons) => ({ type: FETCH_MISSION, payload: missons });
+const FETCH = (missions) => ({ type: FETCH_MISSION, payload: missions });
 
 // ACTION CREATORS
 export const fetchThunk = () => async (dispatch) => {
@@ -13,16 +13,15 @@ export const fetchThunk = () => async (dispatch) => {
     mission: mission.mission_name,
     description: mission.description,
   }));
-  console.log(missions);
   dispatch(FETCH(missions));
 };
 
 const initialState = [];
 
 const reducer = (state = initialState, action) => {
-  switch (action) {
-    case 'FETCH_MISSON':
-      return [...state, action.payload];
+  switch (action.type) {
+    case 'FETCH_MISSION':
+      return action.payload;
 
     default:
       return state;
