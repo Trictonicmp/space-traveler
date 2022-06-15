@@ -1,10 +1,8 @@
 import fetchMissions from '../../API/Missions/MissionsAPI';
-// ACTIONS
-const FETCH_MISSION = 'FETCH_MISSION';
 
+const FETCH_MISSION = 'FETCH_MISSION';
 const FETCH = (missions) => ({ type: FETCH_MISSION, payload: missions });
 
-// ACTION CREATORS
 export const fetchThunk = () => async (dispatch) => {
   let missions = [];
   const response = await fetchMissions();
