@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from '../css/components/Rocket.module.css';
-import buttonStyle from '../css/components/RocketsButton.module.css';
+import styles from '../../css/components/Rocket.module.css';
+import buttonStyle from '../../css/components/RocketsButton.module.css';
 
 const Rocket = (props) => {
   const {
