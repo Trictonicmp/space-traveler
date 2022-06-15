@@ -1,0 +1,42 @@
+.profileContainer {
+  padding-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: calc(100% - 100px);
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.profileListSection {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20em;
+}
+
+.profileListItemsContainer {
+  margin-top: 1em;
+  border-radius: 0.2em;
+  outline: 1px solid #dfdfdf;
+  list-style: none;
+}
+
+.profileListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 1em;
+}
+
+.profileListItem:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.profileListNoItems {
+  padding: 1em;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
