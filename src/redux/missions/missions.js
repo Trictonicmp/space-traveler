@@ -6,7 +6,13 @@ const FETCH = (missons) => ({ type: FETCH_MISSION, payload: missons });
 
 // ACTION CREATORS
 export const fetchThunk = () => async (dispatch) => {
-  const missions = await fetchMissions();
+  let missions = [];
+  const response = await fetchMissions();
+  missions = response.map((mission) => ({
+    id: mission.mission_id,
+    mission: mission.mission_name,
+    description: mission.description,
+  }));
   console.log(missions);
   dispatch(FETCH(missions));
 };
