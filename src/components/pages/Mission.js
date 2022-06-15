@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchThunk } from '../../redux/missions/missions';
-import SingleMission from '../Mission/SingleMission';
+import SingleMission, { TableHeader } from '../Mission/SingleMission';
 
 function Mission() {
   const dispatch = useDispatch();
@@ -14,7 +14,10 @@ function Mission() {
   }, []);
 
   return (
-    <SingleMission />
+    <>
+      <TableHeader />
+      <SingleMission />
+    </>
   );
 }
 
