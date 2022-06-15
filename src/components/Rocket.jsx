@@ -33,12 +33,12 @@ const Rocket = (props) => {
           type="button"
           className={`
             ${buttonStyle.button}
-            ${buttonStyle.blue}
+            ${rocket.reserved ? buttonStyle.outline : buttonStyle.blue}
             ${styles.reserveButton}
           `}
           onClick={toggleReserveRocket}
         >
-          Reserve Rocket
+          { rocket.reserved ? ('Cancel Reservation') : ('Reserve Rocket') }
         </button>
       </div>
     </li>
