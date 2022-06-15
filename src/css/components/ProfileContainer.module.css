@@ -18,11 +18,22 @@
   margin-top: 1em;
   border-radius: 0.2em;
   outline: 1px solid #dfdfdf;
+  list-style: none;
 }
 
 .profileListItem {
   display: flex;
   width: 100%;
   padding: 1em;
+}
+
+.profileListItem:not(:last-child) {
   border-bottom: 1px solid #dfdfdf;
+}
+
+.profileListNoItems {
+  padding: 1em;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -16,6 +16,12 @@ function Profile() {
     return '';
   });
 
+  if (missionsState.length === 0) {
+    reservedMissions.push(
+      <li key={0} className={styles.profileListNoItems}>There&apos;s no Rockets reserved</li>,
+    );
+  }
+
   const reservedRockets = rocketsState.map((rocket) => {
     if (rocket.reserved) {
       return (
@@ -27,6 +33,12 @@ function Profile() {
 
     return '';
   });
+
+  if (rocketsState.length === 0) {
+    reservedRockets.push(
+      <li key={1} className={styles.profileListNoItems}>There&apos;s no Rockets reserved</li>,
+    );
+  }
 
   return (
     <section className={styles.profileContainer}>
