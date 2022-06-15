@@ -24,7 +24,7 @@ function Profile() {
   if (reservedMissions.length === 0) {
     reservedMissions.push(
       <li className={styles.profileListNoItems}>
-        No Missions Reserved
+        No Missions Joined
       </li>,
     );
   }
