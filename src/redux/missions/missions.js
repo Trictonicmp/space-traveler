@@ -1,6 +1,15 @@
 // ACTIONS
+const FETCH = 'FETCH_MISSION'
+
 
 // ACTION CREATORS
+const FETCH_MISSION = () => async (dispatch) => {
+  try {
+    
+  } catch (error) {
+    
+  }
+}
 
 const initialState = [];
 
