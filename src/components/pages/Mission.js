@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchThunk } from '../../redux/missions/missions';
 import SingleMission, { TableHeader } from '../Mission/SingleMission';
 
 function Mission() {
   const dispatch = useDispatch();
-  // const selector = useSelector();
 
-  // const missions = selector((state) => state.missions);
-
+  const missions = useSelector((state) => state.missions);
   useEffect(() => {
     dispatch(fetchThunk());
   }, []);
@@ -16,7 +14,9 @@ function Mission() {
   return (
     <>
       <TableHeader />
-      <SingleMission />
+      {missions.map((mission) => (
+        <SingleMission key={mission.id} name={mission.mission} description={mission.description} />
+      ))}
     </>
   );
 }
