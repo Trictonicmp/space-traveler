@@ -26,7 +26,7 @@ const reducer = (state = [], action) => {
     case RESERVE_ROCKET:
       return state.map((rocket) => {
         if (rocket.id !== action.payload) return rocket;
-        return { ...rocket, reserved: true };
+        return { ...rocket, reserved: !rocket.reserved };
       });
     default:
       return state;
