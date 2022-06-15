@@ -1,3 +1,21 @@
 * {
     background-color: aliceblue;
 }
+
+.header {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header div {
+    border: 1px solid rgb(187, 186, 186);
+    width: 10vw;
+    padding: 5px;
+}
+
+.description {
+    width: 40vw !important;
+}
