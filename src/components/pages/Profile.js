@@ -1,9 +1,12 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleReserveRocket } from '../../redux/rockets/rockets';
 import styles from '../../css/components/ProfileContainer.module.css';
+import buttonStyle from '../../css/components/RocketsButton.module.css';
 
 function Profile() {
   const missionsState = useSelector((state) => state.missions);
   const rocketsState = useSelector((state) => state.rockets);
+  const dispatch = useDispatch();
 
   const reservedMissions = [];
   const reservedRockets = [];
@@ -31,6 +34,16 @@ function Profile() {
       reservedRockets.push(
         <li key={rocket.id} className={styles.profileListItem}>
           { rocket.rocketName }
+          <button
+            type="button"
+            className={`
+              ${buttonStyle.button}
+              ${buttonStyle.outline}
+            `}
+            onClick={() => dispatch(toggleReserveRocket(rocket.id))}
+          >
+            Cancel Reservation
+          </button>
         </li>,
       );
     }
