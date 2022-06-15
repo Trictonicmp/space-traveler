@@ -1,0 +1,57 @@
+* {
+  background-color: aliceblue;
+}
+
+body {
+  padding-bottom: 20px;
+}
+
+.header {
+  display: inline-flex;
+  padding: 10px 10px 0 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.header div {
+  border: 1px solid rgb(187, 186, 186);
+  width: 12vw;
+  padding: 5px;
+}
+
+.description {
+  width: 50vw !important;
+}
+
+.table {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.table div {
+  width: 12vw;
+  border: 1px solid rgb(187, 186, 186);
+  padding: 5px;
+}
+
+.description-info {
+  width: 50vw !important;
+}
+
+.badge {
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.button {
+  border: 1px solid rgb(102, 102, 245);
+  color: rgb(128, 128, 223);
+  padding: 5px;
+  cursor: pointer;
+}
