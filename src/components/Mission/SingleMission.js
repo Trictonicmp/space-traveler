@@ -14,8 +14,11 @@ export function TableHeader() {
 
 function SingleMission() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="table">
+      <div>some</div>
+      <div className="description-info">some</div>
+      <div>sopme</div>
+      <div>some</div>
     </div>
   );
 }
