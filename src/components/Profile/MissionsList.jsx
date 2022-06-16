@@ -41,7 +41,7 @@ const MissionsList = (props) => {
 
 MissionsList.propTypes = {
   missions: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     mission: PropTypes.string,
     description: PropTypes.string,
   })).isRequired,
