@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchThunk } from '../../redux/missions/missions';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import SingleMission, { TableHeader } from '../Mission/SingleMission';
 
 function Mission() {
-  const dispatch = useDispatch();
-
   const missions = useSelector((state) => state.missions);
-  useEffect(() => {
-    dispatch(fetchThunk());
-  }, []);
-
   return (
     <>
       <TableHeader />
