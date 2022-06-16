@@ -1,12 +1,15 @@
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import rockets from '../redux/rockets/rockets';
-import missions from '../redux/missions/missions';
 import App from '../App';
 import Rockets from '../components/pages/Rockets';
 import Mission from '../components/pages/Mission';
 import Profile from '../components/pages/Profile';
+import missions, { JOIN } from '../redux/missions/missions';
+import rockets, { toggleReserveRocket } from '../redux/rockets/rockets';
+
 
 const { configureStore } = require('@reduxjs/toolkit');
 
@@ -81,5 +84,61 @@ describe('App snapshots', () => {
       </Provider>,
     );
     expect(profilePage).toMatchSnapshot();
+  });
+});
+
+describe('App events', () => {
+  test('Test click on rockets navlink', () => {
+    const store = createStore();
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+    );
+    fireEvent.click(screen.getByText('Rockets'));
+    expect(screen.getByText('Falcon Heavy')).toBeInTheDocument();
+  });
+
+  test('Test click on missions navlink', () => {
+    const store = createStore();
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+    );
+    fireEvent.click(screen.getByText('Missions'));
+    expect(screen.getByText('Iridium NEXT')).toBeInTheDocument();
+  });
+
+  test('Test click on profile navlink and display joined missions', () => {
+    const store = createStore();
+    store.dispatch(JOIN(1));
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+    );
+    fireEvent.click(screen.getByText('Profile'));
+    expect(screen.getByText('Iridium NEXT')).toBeTruthy();
+  });
+
+  test('Test click on profile navlink and display reserved rockets', () => {
+    const store = createStore();
+    store.dispatch(toggleReserveRocket(1));
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+    );
+    fireEvent.click(screen.getByText('Profile'));
+    expect(screen.getByText('Falcon Heavy')).toBeTruthy();
   });
 });
