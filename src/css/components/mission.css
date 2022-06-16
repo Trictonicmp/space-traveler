@@ -41,12 +41,22 @@ body {
   width: 50vw !important;
 }
 
-.badge {
+.not-a-member-badge {
   background-color: gray;
   border: none;
   outline: none;
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px;
+  color: white;
+}
+
+.active-member-badge {
+  background-color: rgb(31, 164, 168);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
 }
 
 .join-button {
@@ -55,6 +65,7 @@ body {
   padding: 5px;
   cursor: pointer;
   font-weight: bold;
+  padding: 5px 7px;
 }
 
 .leave-button {
