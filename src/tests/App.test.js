@@ -51,7 +51,7 @@ describe('App snapshots', () => {
     expect(app).toMatchSnapshot();
   });
 
-  test('It should render the Rockets page', () =>{
+  test('It should render the Rockets page', () => {
     const store = createStore();
     const rocketsPage = render(
       <Provider store={store}>
