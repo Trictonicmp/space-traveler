@@ -5,6 +5,8 @@ import rockets from '../redux/rockets/rockets';
 import missions from '../redux/missions/missions';
 import App from '../App';
 import Rockets from '../components/pages/Rockets';
+import Mission from '../components/pages/Mission';
+import Profile from '../components/pages/Profile';
 
 const { configureStore } = require('@reduxjs/toolkit');
 
@@ -59,5 +61,25 @@ describe('App snapshots', () => {
       </Provider>,
     );
     expect(rocketsPage).toMatchSnapshot();
+  });
+
+  test('It should render the Missiosn page', () => {
+    const store = createStore();
+    const missionsPage = render(
+      <Provider store={store}>
+        <Mission />
+      </Provider>,
+    );
+    expect(missionsPage).toMatchSnapshot();
+  });
+
+  test('It should render the Profile page', () => {
+    const store = createStore();
+    const profilePage = render(
+      <Provider store={store}>
+        <Profile />
+      </Provider>,
+    );
+    expect(profilePage).toMatchSnapshot();
   });
 });

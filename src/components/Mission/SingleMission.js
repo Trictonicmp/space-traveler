@@ -77,21 +77,25 @@ function SingleMission({
 SingleMission.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  joined: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
+  joined: PropTypes.bool,
+};
+
+SingleMission.defaultProps = {
+  joined: false,
 };
 
 ButtonWrapper.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   joined: PropTypes.bool.isRequired,
 };
 
 Leave.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 Join.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 BadgeWrapper.propTypes = {
