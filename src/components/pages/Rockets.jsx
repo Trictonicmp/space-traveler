@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux/es/exports';
+import { useSelector } from 'react-redux';
 import Rocket from '../Rocket/Rocket';
 
 import styles from '../../css/components/RocketsContainer.module.css';

@@ -78,7 +78,11 @@ SingleMission.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  joined: PropTypes.bool.isRequired,
+  joined: PropTypes.bool,
+};
+
+SingleMission.defaultProps = {
+  joined: false,
 };
 
 ButtonWrapper.propTypes = {
