@@ -20,6 +20,7 @@ function Mission() {
           id={mission.id}
           name={mission.mission}
           description={mission.description}
+          joined={mission.joined}
         />
       ))}
     </>
