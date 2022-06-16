@@ -8,49 +8,41 @@ function Profile() {
   const rocketsState = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
 
-  const reservedMissions = [];
-  const reservedRockets = [];
+  const reservedMissions = missionsState.filter((mission) => mission.reserved);
+  const reservedRockets = rocketsState.filter((rocket) => rocket.reserved);
 
-  missionsState.forEach((mission) => {
-    if (mission.reserved) {
-      reservedMissions.push(
-        <li key={mission.id} className={styles.profileListItem}>
-          { mission.mission }
-        </li>,
-      );
-    }
-  });
+  const reservedMissionsJSX = missionsState.map((mission) => (
+    <li key={mission.id} className={styles.profileListItem}>
+      { mission.mission }
+    </li>
+  ));
 
   if (reservedMissions.length === 0) {
-    reservedMissions.push(
+    reservedMissionsJSX.push(
       <li key={0} className={styles.profileListNoItems}>
         No Missions Joined
       </li>,
     );
   }
 
-  rocketsState.forEach((rocket) => {
-    if (rocket.reserved) {
-      reservedRockets.push(
-        <li key={rocket.id} className={styles.profileListItem}>
-          { rocket.rocketName }
-          <button
-            type="button"
-            className={`
-              ${buttonStyle.button}
-              ${buttonStyle.outline}
-            `}
-            onClick={() => dispatch(toggleReserveRocket(rocket.id))}
-          >
-            Cancel Reservation
-          </button>
-        </li>,
-      );
-    }
-  });
+  const reservedRocketsJSX = reservedRockets.map((rocket) => (
+    <li key={rocket.id} className={styles.profileListItem}>
+      { rocket.rocketName }
+      <button
+        type="button"
+        className={`
+          ${buttonStyle.button}
+          ${buttonStyle.outline}
+        `}
+        onClick={() => dispatch(toggleReserveRocket(rocket.id))}
+      >
+        Cancel Reservation
+      </button>
+    </li>
+  ));
 
   if (reservedRockets.length === 0) {
-    reservedRockets.push(
+    reservedRocketsJSX.push(
       <li key={0} className={styles.profileListNoItems}>
         No Rockets Reserved
       </li>,
@@ -62,14 +54,14 @@ function Profile() {
       <div className={styles.profileListSection}>
         <h2>My Missions</h2>
         <ul className={styles.profileListItemsContainer}>
-          { reservedMissions }
+          { reservedMissionsJSX }
         </ul>
       </div>
 
       <div className={styles.profileListSection}>
         <h2>My Rockets</h2>
         <ul className={styles.profileListItemsContainer}>
-          { reservedRockets }
+          { reservedRocketsJSX }
         </ul>
       </div>
     </section>
