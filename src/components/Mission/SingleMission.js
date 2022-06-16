@@ -10,7 +10,7 @@ export function TableHeader() {
       <div>Mission</div>
       <div className="description">Description</div>
       <div>Status</div>
-      <div>Button</div>
+      <div>Option</div>
     </header>
   );
 }
