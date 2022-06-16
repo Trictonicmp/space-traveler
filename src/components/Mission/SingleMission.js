@@ -39,7 +39,7 @@ function ButtonWrapper({ joined, id }) {
 
 function NotAMemberBadge() {
   return (
-    <button type="button" className="badge">
+    <button type="button" className="not-a-member-badge">
       Not a member
     </button>
   );
@@ -47,7 +47,7 @@ function NotAMemberBadge() {
 
 function MemberBadge() {
   return (
-    <button type="button" className="badge">
+    <button type="button" className="active-member-badge">
       Active Member
     </button>
   );
