@@ -41,17 +41,42 @@ body {
   width: 50vw !important;
 }
 
-.badge {
+.not-a-member-badge {
   background-color: gray;
   border: none;
   outline: none;
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px;
+  color: white;
 }
 
-.button {
-  border: 1px solid rgb(102, 102, 245);
-  color: rgb(128, 128, 223);
+.active-member-badge {
+  background-color: rgb(31, 164, 168);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.join-button {
+  border: 1px solid gray;
+  color: gray;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.leave-button {
+  border: 1px solid red;
+  color: red;
   padding: 5px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.wrapper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

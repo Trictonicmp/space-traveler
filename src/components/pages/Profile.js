@@ -8,7 +8,7 @@ function Profile() {
   const missionsState = useSelector((state) => state.missions);
   const rocketsState = useSelector((state) => state.rockets);
 
-  const reservedMissions = missionsState.filter((mission) => mission.reserved);
+  const reservedMissions = missionsState.filter((mission) => mission.joined);
   const reservedRockets = rocketsState.filter((rocket) => rocket.reserved);
 
   return (
