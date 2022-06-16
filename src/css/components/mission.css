@@ -62,7 +62,6 @@ body {
 .join-button {
   border: 1px solid gray;
   color: gray;
-  padding: 5px;
   cursor: pointer;
   font-weight: bold;
   padding: 5px 10px;
