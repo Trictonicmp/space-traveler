@@ -49,9 +49,10 @@ body {
   padding: 3px;
 }
 
-.button {
-  border: 1px solid rgb(102, 102, 245);
-  color: rgb(128, 128, 223);
+.join-button {
+  border: 1px solid gray;
+  color: gray;
   padding: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
