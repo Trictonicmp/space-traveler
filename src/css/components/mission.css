@@ -56,3 +56,11 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+
+.leave-button {
+  border: 1px solid red;
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
