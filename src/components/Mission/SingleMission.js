@@ -37,12 +37,24 @@ function ButtonWrapper({ joined, id }) {
   return joined ? <Leave id={id} /> : <Join id={id} />;
 }
 
-function Badge() {
+function NotAMemberBadge() {
   return (
     <button type="button" className="badge">
       Not a member
     </button>
   );
+}
+
+function MemberBadge() {
+  return (
+    <button type="button" className="badge">
+      Active Member
+    </button>
+  );
+}
+
+function BadgeWrapper({ joined }) {
+  return joined ? <MemberBadge /> : <NotAMemberBadge />;
 }
 
 function SingleMission({
@@ -53,7 +65,7 @@ function SingleMission({
       <div>{name}</div>
       <div className="description-info">{description}</div>
       <div>
-        <Badge />
+        <BadgeWrapper joined={joined} />
       </div>
       <div>
         <ButtonWrapper joined={joined} id={id} />
@@ -80,5 +92,9 @@ Leave.propTypes = {
 
 Join.propTypes = {
   id: PropTypes.string.isRequired,
+};
+
+BadgeWrapper.propTypes = {
+  joined: PropTypes.bool.isRequired,
 };
 export default SingleMission;
