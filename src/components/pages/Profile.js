@@ -12,7 +12,7 @@ function Profile() {
   const reservedRockets = [];
 
   missionsState.forEach((mission) => {
-    if (mission.reserved) {
+    if (mission.joined) {
       reservedMissions.push(
         <li key={mission.id} className={styles.profileListItem}>
           { mission.mission }
