@@ -40,7 +40,7 @@ function ButtonWrapper({ joined, id }) {
 function NotAMemberBadge() {
   return (
     <button type="button" className="not-a-member-badge">
-      Not a member
+      NOT A MEMBER
     </button>
   );
 }
