@@ -15,7 +15,12 @@ function Mission() {
     <>
       <TableHeader />
       {missions.map((mission) => (
-        <SingleMission key={mission.id} name={mission.mission} description={mission.description} />
+        <SingleMission
+          key={mission.id}
+          id={mission.id}
+          name={mission.mission}
+          description={mission.description}
+        />
       ))}
     </>
   );
