@@ -45,7 +45,7 @@ Run ```npm test```
 
 ## Authors
 
-👤 **@Amedzro-Elikplim **
+👤 **@Amedzro-Elikplim**
 
 - GitHub: [@Amedzro-Elikplim](https://github.com/Amedzro-Elikplim )
 - Twitter: [@twitterhandle](https://twitter.com/Amedzro-Elikplim)
