@@ -75,3 +75,9 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+
+.wrapper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

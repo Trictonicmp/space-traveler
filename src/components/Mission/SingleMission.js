@@ -64,10 +64,10 @@ function SingleMission({
     <div className="table">
       <div>{name}</div>
       <div className="description-info">{description}</div>
-      <div>
+      <div className="wrapper-container">
         <BadgeWrapper joined={joined} />
       </div>
-      <div>
+      <div className="wrapper-container">
         <ButtonWrapper joined={joined} id={id} />
       </div>
     </div>
