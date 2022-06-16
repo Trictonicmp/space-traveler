@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../../css/components/mission.css';
 import { JOIN } from '../../redux/missions/missions';
@@ -15,16 +15,26 @@ export function TableHeader() {
   );
 }
 
-function JoinOrLeaveButton({ id }) {
+function Join({ id }) {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.missions);
-  console.log(data);
-
   return (
     <button onClick={() => dispatch(JOIN(id))} type="button" className="button">
       Join Mission
     </button>
   );
+}
+
+function Leave({ id }) {
+  const dispatch = useDispatch();
+  return (
+    <button onClick={() => dispatch(JOIN(id))} type="button" className="button">
+      Leave Mission
+    </button>
+  );
+}
+
+function ButtonWrapper({ joined, id }) {
+  return joined ? <Leave id={id} /> : <Join id={id} />;
 }
 
 function Badge() {
@@ -35,7 +45,9 @@ function Badge() {
   );
 }
 
-function SingleMission({ id, name, description }) {
+function SingleMission({
+  id, name, description, joined,
+}) {
   return (
     <div className="table">
       <div>{name}</div>
@@ -44,7 +56,7 @@ function SingleMission({ id, name, description }) {
         <Badge />
       </div>
       <div>
-        <JoinOrLeaveButton id={id} />
+        <ButtonWrapper joined={joined} id={id} />
       </div>
     </div>
   );
@@ -54,10 +66,19 @@ SingleMission.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  joined: PropTypes.bool.isRequired,
 };
 
-JoinOrLeaveButton.propTypes = {
+ButtonWrapper.propTypes = {
+  id: PropTypes.string.isRequired,
+  joined: PropTypes.bool.isRequired,
+};
+
+Leave.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
+Join.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 export default SingleMission;
