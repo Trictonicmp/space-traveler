@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import rockets from '../redux/rockets/rockets';
 import missions from '../redux/missions/missions';
 import App from '../App';
+import Rockets from '../components/pages/Rockets';
 
 const { configureStore } = require('@reduxjs/toolkit');
 
@@ -36,7 +37,7 @@ const createStore = () => {
   });
 };
 
-describe('Rockets test', () => {
+describe('App snapshots', () => {
   test('It should render the app', () => {
     const store = createStore();
     const app = render(
@@ -48,5 +49,15 @@ describe('Rockets test', () => {
     );
 
     expect(app).toMatchSnapshot();
+  });
+
+  test('It should render the Rockets page', () =>{
+    const store = createStore();
+    const rocketsPage = render(
+      <Provider store={store}>
+        <Rockets />
+      </Provider>,
+    );
+    expect(rocketsPage).toMatchSnapshot();
   });
 });
