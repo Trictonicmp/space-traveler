@@ -10,7 +10,6 @@ import Profile from '../components/pages/Profile';
 import missions, { JOIN } from '../redux/missions/missions';
 import rockets, { toggleReserveRocket } from '../redux/rockets/rockets';
 
-
 const { configureStore } = require('@reduxjs/toolkit');
 
 const createStore = () => {
