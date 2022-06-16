@@ -18,7 +18,7 @@ export function TableHeader() {
 function Join({ id }) {
   const dispatch = useDispatch();
   return (
-    <button onClick={() => dispatch(JOIN(id))} type="button" className="button">
+    <button onClick={() => dispatch(JOIN(id))} type="button" className="join-button">
       Join Mission
     </button>
   );
@@ -27,7 +27,7 @@ function Join({ id }) {
 function Leave({ id }) {
   const dispatch = useDispatch();
   return (
-    <button onClick={() => dispatch(JOIN(id))} type="button" className="button">
+    <button onClick={() => dispatch(JOIN(id))} type="button" className="leave-button">
       Leave Mission
     </button>
   );
