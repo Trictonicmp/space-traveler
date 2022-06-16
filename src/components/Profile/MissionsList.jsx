@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { toggleReserveRocket } from '../../redux/rockets/rockets';
+import { JOIN } from '../../redux/missions/missions';
 import styles from '../../css/components/ProfileContainer.module.css';
 import buttonStyle from '../../css/components/RocketsButton.module.css';
 
@@ -17,7 +17,7 @@ const MissionsList = (props) => {
           ${buttonStyle.button}
           ${buttonStyle.outline}
         `}
-        onClick={() => dispatch(toggleReserveRocket(mission.id))}
+        onClick={() => dispatch(JOIN(mission.id))}
       >
         Leave Mission
       </button>
