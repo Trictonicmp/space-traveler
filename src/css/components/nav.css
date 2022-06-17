@@ -11,6 +11,11 @@
   gap: 40px;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
 .brand {
   justify-content: center;
   align-items: center;
@@ -19,4 +24,9 @@
 .profile-link {
   border-left: 2px solid rgb(206, 206, 206);
   padding-left: 15px;
+}
+
+a.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
