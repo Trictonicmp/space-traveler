@@ -7,50 +7,54 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, Javascript
+- React
+- Stylelint, eslint, redux
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+[Live Demo Link](https://delightful-llama-d7353f.netlify.app/profile)
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+* node package manager – to be able to install packages locally.
+* A github Account – to be able to use github actions.
+
+
 ### Setup
+* Open the terminal
+* Run ```cd \path\to\where\you\want\your\local\copy```
+* Clone the repo
+  * Run ```git clone https://github.com/Trictonicmp/space-traveler.git```
+  * Run ```cd space-traveler```
+* Install dependencies  
+  * Run ```npm install```
 
-### Install
+### Build
+Run ```npm run build```
 
-### Usage
+### Dev server
+Run ```npm start```
 
-### Run tests
-
-### Deployment
-
+### Tests
+Run ```npm test```
 
 
 ## Authors
 
-👤 **Author1**
+👤 **@Amedzro-Elikplim**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Amedzro-Elikplim](https://github.com/Amedzro-Elikplim )
+- Twitter: [@twitterhandle](https://twitter.com/Amedzro-Elikplim)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amedzro-emmanuel-elikplim/)
 
-👤 **Author2**
+👤 **Amaury Permer**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Trictonicmp)
+- LinkedIn: [Amaury Permer](https://www.linkedin.com/in/amaury-permer/)
 
 ## 🤝 Contributing
 
