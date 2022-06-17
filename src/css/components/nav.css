@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding: 10px 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.brand {
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-link {
+  border-left: 2px solid rgb(206, 206, 206);
+  padding-left: 15px;
+}
+
+a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}

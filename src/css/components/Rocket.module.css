@@ -1,0 +1,44 @@
+.rocket {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.rocketImg {
+  flex-shrink: 1;
+  width: 100%;
+  max-width: 18em;
+}
+
+.rocketDetails {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.rocketTitle {
+  margin-bottom: 0.5em;
+}
+
+.reserveButton {
+  bottom: 0;
+  margin-top: 1em;
+}
+
+.reservedBadge {
+  font-size: 0.7em;
+  padding: 0.3em;
+  background-color: #18a2b8;
+  vertical-align: middle;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+  margin-right: 0.5em;
+}

@@ -1,0 +1,82 @@
+* {
+  background-color: aliceblue;
+}
+
+body {
+  padding-bottom: 20px;
+}
+
+.header {
+  display: inline-flex;
+  padding: 10px 10px 0 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.header div {
+  border: 1px solid rgb(187, 186, 186);
+  width: 12vw;
+  padding: 5px;
+}
+
+.description {
+  width: 50vw !important;
+}
+
+.table {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.table div {
+  width: 12vw;
+  border: 1px solid rgb(187, 186, 186);
+  padding: 5px;
+}
+
+.description-info {
+  width: 50vw !important;
+}
+
+.not-a-member-badge {
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.active-member-badge {
+  background-color: rgb(31, 164, 168);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.join-button {
+  border: 1px solid gray;
+  color: gray;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.leave-button {
+  border: 1px solid red;
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wrapper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

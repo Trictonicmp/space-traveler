@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshots It should render the Missiosn page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <div>
+          Mission
+        </div>
+        <div
+          class="description"
+        >
+          Description
+        </div>
+        <div>
+          Status
+        </div>
+        <div>
+          Option
+        </div>
+      </header>
+      <div
+        class="table"
+      >
+        <div>
+          Iridium NEXT
+        </div>
+        <div
+          class="description-info"
+        >
+          In 2017, Iridium began launching Iridium NEXT, a second-generation worldwide network of telecommunications satellites, consisting of 66 active satellites, with another nine in-orbit spares and six on-ground spares. These satellites will incorporate features such as data transmission that were not emphasized in the original design. The constellation will provide L-band data speeds of up to 128 kbit/s to mobile terminals, up to 1.5 Mbit/s to Iridium Pilot marine terminals, and high-speed Ka-band service of up to 8 Mbit/s to fixed/transportable terminals. The next-generation terminals and service are expected to be commercially available by the end of 2018. However, Iridiums proposed use of its next-generation satellites has raised concerns the service will harmfully interfere with GPS devices. The satellites will incorporate a secondary payload for Aireon, a space-qualified ADS-B data receiver. This is for use by air traffic control and, via FlightAware, for use by airlines. A tertiary payload on 58 satellites is a marine AIS ship-tracker receiver, for Canadian company exactEarth Ltd. Iridium can also be used to provide a data link to other satellites in space, enabling command and control of other space assets regardless of the position of ground stations and gateways.
+        </div>
+        <div
+          class="wrapper-container"
+        >
+          <button
+            class="not-a-member-badge"
+            type="button"
+          >
+            NOT A MEMBER
+          </button>
+        </div>
+        <div
+          class="wrapper-container"
+        >
+          <button
+            class="join-button"
+            type="button"
+          >
+            Join Mission
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <div>
+        Mission
+      </div>
+      <div
+        class="description"
+      >
+        Description
+      </div>
+      <div>
+        Status
+      </div>
+      <div>
+        Option
+      </div>
+    </header>
+    <div
+      class="table"
+    >
+      <div>
+        Iridium NEXT
+      </div>
+      <div
+        class="description-info"
+      >
+        In 2017, Iridium began launching Iridium NEXT, a second-generation worldwide network of telecommunications satellites, consisting of 66 active satellites, with another nine in-orbit spares and six on-ground spares. These satellites will incorporate features such as data transmission that were not emphasized in the original design. The constellation will provide L-band data speeds of up to 128 kbit/s to mobile terminals, up to 1.5 Mbit/s to Iridium Pilot marine terminals, and high-speed Ka-band service of up to 8 Mbit/s to fixed/transportable terminals. The next-generation terminals and service are expected to be commercially available by the end of 2018. However, Iridiums proposed use of its next-generation satellites has raised concerns the service will harmfully interfere with GPS devices. The satellites will incorporate a secondary payload for Aireon, a space-qualified ADS-B data receiver. This is for use by air traffic control and, via FlightAware, for use by airlines. A tertiary payload on 58 satellites is a marine AIS ship-tracker receiver, for Canadian company exactEarth Ltd. Iridium can also be used to provide a data link to other satellites in space, enabling command and control of other space assets regardless of the position of ground stations and gateways.
+      </div>
+      <div
+        class="wrapper-container"
+      >
+        <button
+          class="not-a-member-badge"
+          type="button"
+        >
+          NOT A MEMBER
+        </button>
+      </div>
+      <div
+        class="wrapper-container"
+      >
+        <button
+          class="join-button"
+          type="button"
+        >
+          Join Mission
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`App snapshots It should render the Profile page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="profileContainer"
+      >
+        <div
+          class="profileListSection"
+        >
+          <h2>
+            My Missions
+          </h2>
+          <ul
+            class="profileListItemsContainer"
+          >
+            <li
+              class="profileListNoItems"
+            >
+              No Missions Joined
+            </li>
+          </ul>
+        </div>
+        <div
+          class="profileListSection"
+        >
+          <h2>
+            My Rockets
+          </h2>
+          <ul
+            class="profileListItemsContainer"
+          >
+            <li
+              class="profileListNoItems"
+            >
+              No Rockets Reserved
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="profileContainer"
+    >
+      <div
+        class="profileListSection"
+      >
+        <h2>
+          My Missions
+        </h2>
+        <ul
+          class="profileListItemsContainer"
+        >
+          <li
+            class="profileListNoItems"
+          >
+            No Missions Joined
+          </li>
+        </ul>
+      </div>
+      <div
+        class="profileListSection"
+      >
+        <h2>
+          My Rockets
+        </h2>
+        <ul
+          class="profileListItemsContainer"
+        >
+          <li
+            class="profileListNoItems"
+          >
+            No Rockets Reserved
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`App snapshots It should render the Rockets page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="rocketsContainer"
+      >
+        <li
+          class="rocket"
+        >
+          <img
+            alt="Falcon Heavy"
+            class="rocketImg"
+          />
+          <div
+            class="rocketDetails"
+          >
+            <h2
+              class="rocketTitle"
+            >
+              Falcon Heavy
+            </h2>
+            <p>
+              With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.
+            </p>
+            <button
+              class="
+            button
+            blue
+            reserveButton
+          "
+              type="button"
+            >
+              Reserve Rocket
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="rocketsContainer"
+    >
+      <li
+        class="rocket"
+      >
+        <img
+          alt="Falcon Heavy"
+          class="rocketImg"
+        />
+        <div
+          class="rocketDetails"
+        >
+          <h2
+            class="rocketTitle"
+          >
+            Falcon Heavy
+          </h2>
+          <p>
+            With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.
+          </p>
+          <button
+            class="
+            button
+            blue
+            reserveButton
+          "
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`App snapshots It should render the app 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="nav"
+      >
+        <div
+          class="brand d-flex"
+        >
+          <img
+            alt="Logo"
+            src="logo.png"
+            width="70px"
+          />
+          <h2>
+            Space Travelers’ Hub
+          </h2>
+        </div>
+        <ul
+          class="nav-links"
+        >
+          <a
+            href="/"
+          >
+            Rockets
+          </a>
+          <a
+            href="/mission"
+          >
+            Missions
+          </a>
+          <a
+            class="profile-link"
+            href="/profile"
+          >
+            Profile
+          </a>
+        </ul>
+      </nav>
+      <ul
+        class="rocketsContainer"
+      >
+        <li
+          class="rocket"
+        >
+          <img
+            alt="Falcon Heavy"
+            class="rocketImg"
+          />
+          <div
+            class="rocketDetails"
+          >
+            <h2
+              class="rocketTitle"
+            >
+              Falcon Heavy
+            </h2>
+            <p>
+              With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.
+            </p>
+            <button
+              class="
+            button
+            blue
+            reserveButton
+          "
+              type="button"
+            >
+              Reserve Rocket
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="nav"
+    >
+      <div
+        class="brand d-flex"
+      >
+        <img
+          alt="Logo"
+          src="logo.png"
+          width="70px"
+        />
+        <h2>
+          Space Travelers’ Hub
+        </h2>
+      </div>
+      <ul
+        class="nav-links"
+      >
+        <a
+          href="/"
+        >
+          Rockets
+        </a>
+        <a
+          href="/mission"
+        >
+          Missions
+        </a>
+        <a
+          class="profile-link"
+          href="/profile"
+        >
+          Profile
+        </a>
+      </ul>
+    </nav>
+    <ul
+      class="rocketsContainer"
+    >
+      <li
+        class="rocket"
+      >
+        <img
+          alt="Falcon Heavy"
+          class="rocketImg"
+        />
+        <div
+          class="rocketDetails"
+        >
+          <h2
+            class="rocketTitle"
+          >
+            Falcon Heavy
+          </h2>
+          <p>
+            With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.
+          </p>
+          <button
+            class="
+            button
+            blue
+            reserveButton
+          "
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

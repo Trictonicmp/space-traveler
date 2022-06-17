@@ -1,0 +1,32 @@
+.button {
+  border: none;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.blue {
+  color: white;
+  background-color: hsl(211, 100%, 50%);
+}
+
+.blue:hover { background-color: hsl(200, 100%, 60%); }
+.blue:active { background-color: hsl(211, 100%, 40%); }
+
+.outline {
+  background-color: transparent;
+  outline: 1px solid #6d757d;
+  color: #6d757d;
+}
+
+.outline:hover {
+  outline: 1px solid #831f1f;
+}
+
+.outline:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
